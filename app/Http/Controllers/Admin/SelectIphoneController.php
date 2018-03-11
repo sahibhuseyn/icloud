@@ -2,32 +2,37 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\HowWork;
 use App\Language;
+use App\SelectIphone;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
 
-class HowWorkController extends Controller
+class SelectIphoneController extends Controller
 {
     public function show ($language_code) {
         $language_id = Language::getLanguageByCode($language_code);
-        $how_works = HowWork::getHowWorkByLanguage($language_code);
+        $selects = SelectIphone::getIphonesByLanguageCode($language_code);
 
-        return view('admin.how-work.how', compact('how_works', 'language_id'));
+        return view('admin.iphone-slider.slider', compact('selects', 'language_id'));
     }
 
     public function add ($language_id, Request $request) {
 
-        if (!$request->text  || !$request->image ) {
+        if (!$request->phone_name  || !$request->image ) {
             Session::flash('fail', 'Please fill all the information');
 
             return back();
         }
 
-        $testimonial = new HowWork();
+        $testimonial = new SelectIphone();
         $testimonial->language_id = $request->language_id;
-        $testimonial->text = $request->text;
+        $testimonial->phone_name = $request->phone_name;
+        $testimonial->country_name = implode('_',$request->country_name);
+        $testimonial->estimate_day = implode('_', $request->estimate_day);
+        $testimonial->service_type = implode('_',$request->service_type);
+        $testimonial->price = implode(',',$request->price);
+
 
         $image = $request->file('image');
         $filename  = time() . '.' . $image->getClientOriginalExtension();
@@ -46,8 +51,8 @@ class HowWorkController extends Controller
 
     }
 
-    public function update (HowWork $testimonial, Request $request) {
-        if (!$request->text) {
+    public function update (SelectIphone $testimonial, Request $request) {
+        if (!$request->phone_name) {
             Session::flash('fail', 'Please fill all the information');
 
             return back();
@@ -65,7 +70,11 @@ class HowWorkController extends Controller
 
         }
 
-        $testimonial->text = $request->text;
+        $testimonial->phone_name = $request->phone_name;
+        $testimonial->country_name = implode('_',$request->country_name);
+        $testimonial->estimate_day = implode('_', $request->estimate_day);
+        $testimonial->service_type = implode('_',$request->service_type);
+        $testimonial->price = implode(',',$request->price);
         $testimonial->save();
 
         Session::flash('success', 'Successfully updated');
@@ -74,7 +83,7 @@ class HowWorkController extends Controller
 
     }
 
-    public function delete (HowWork $testimonial) {
+    public function delete (SelectIphone $testimonial) {
         $testimonial->delete();
 
         Session::flash('success', 'Successfully Deleted');

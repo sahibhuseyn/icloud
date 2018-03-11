@@ -231,6 +231,19 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li {{Request::is('dash/select_iphone/*') ? "class=active" : ''}}>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">format_size</i>
+                            <span>Iphone Slider</span>
+                        </a>
+                        <ul class="ml-menu">
+                            @foreach($__TILANGUAGES__ as $key => $language)
+                                <li {{ Request::is('dash/select_iphone/' . $language->code) ? "class=active" : '' }}>
+                                    <a {{ Request::is('dash/select_iphone/' . $language->code) ? "class=toggled" : '' }} href="{{ route('select_iphone', $language->code) }}">{{ $language->name }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- #Menu -->
@@ -274,6 +287,40 @@
 
     <!-- Custom Js -->
     <script src="{{ url('/admin/js/admin.js') }}"></script>
+
+    <script>
+        $('.add-btn').click(function() {
+                var input  = $(this).parent('.button-section').siblings('.col-sm-10').children('.form-group').children('.form-line').children('input[type=text]');
+                var inputName = input.attr('name');
+                var inputPlace = input.attr('placeholder');
+
+            $(this).parent('.button-section').parent('.add-new-input').append(
+
+
+                ' <div class="col-sm-10 added-input">' +
+                '<div class="form-group">' +
+                '<div class="form-line">' +
+                '<input type="text" class="form-control" name="' + inputName + '"  placeholder="' + inputPlace +'">' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+        });
+        $('.remove-btn').click(function() {
+
+            if ($(this).parent('.button-section').parent('.add-new-input')
+                    .children('.added-input').length === 0)
+            {
+                $(this).parent('.button-section').parent('.add-new-input')
+                    .children('.col-sm-10').remove()
+            }
+            else {
+
+                $(this).parent('.button-section').parent('.add-new-input')
+                    .children('.added-input').last().remove();
+            }
+        });
+    </script>
 
     @yield('scripts')
 </body>

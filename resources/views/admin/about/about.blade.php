@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row clearfix">
             @foreach($abouts as $count => $testimonial)
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>

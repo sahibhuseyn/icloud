@@ -3,12 +3,12 @@
 @section('content')
     <div class="container-fluid">
         <div class="row clearfix">
-            @foreach($abouts as $count => $testimonial)
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            @foreach($how_works as $count => $testimonial)
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>
-                                <form action="{{ route('admin_about_delete', $testimonial->id) }}" method="post" class="pull-right">
+                                <form action="{{ route('how_works_delete', $testimonial->id) }}" method="post" class="pull-right">
                                     {{ csrf_field() }}
 
                                     <div class="col-sm-4">
@@ -26,7 +26,7 @@
 
                             <hr>
 
-                            <form action="{{ route('admin_about_update', $testimonial->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('how_works_update', $testimonial->id) }}" method="post" enctype="multipart/form-data">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="language_id" value="{{ $testimonial->language->id }}">
                                 <div class="row clearfix">
@@ -69,7 +69,7 @@
                         </h2>
                     </div>
                     <div class="body">
-                        <form action="{{ route('admin_about_add', $language_id) }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ route('how_works_add', $language_id) }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
                             <div class="row clearfix">
                                 <div class="col-sm-12">
@@ -84,7 +84,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <textarea name="text" class="form-control" rows="3" placeholder="About Texta"></textarea>
+                                            <textarea name="text" class="form-control" rows="3" placeholder="How Work Text"></textarea>
                                         </div>
                                     </div>
                                 </div>

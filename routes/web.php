@@ -105,6 +105,13 @@ Route::group(['middleware' => ['web', 'auth', 'sharedData'], 'prefix' => 'dash']
         Route::post('/{testimonial}/delete', 'Admin\HowWorkController@delete')->name('how_works_delete');
     });
 
+    Route::group(['prefix' => 'select_iphone'], function () {
+        Route::get('/{language_code}', 'Admin\SelectIphoneController@show')->name('select_iphone');
+        Route::post('/{language_id}/add', 'Admin\SelectIphoneController@add')->name('select_iphone_add');
+        Route::post('/{testimonial}/update', 'Admin\SelectIphoneController@update')->name('select_iphone_update');
+        Route::post('/{testimonial}/delete', 'Admin\SelectIphoneController@delete')->name('select_iphone_delete');
+    });
+
     Route::group(['prefix' => 'posts'], function () {
         Route::get('/{language_code}', 'Admin\PostController@show')->name('admin_posts');
         Route::post('/{language_id}/add', 'Admin\PostController@add')->name('admin_posts_add');

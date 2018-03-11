@@ -343,18 +343,9 @@
                             <div class="feature align-left">
                                 <h6>@lang('header_sub.iphone_sim')</h6>
 
-                                <div class="form-group mb-30">
-                                    <div class="styled-select">
-                                        <select name="course_select" class="form-control" required="">
-                                            <option value="_val">- Select Your Course Type -</option>
-                                            @foreach($__ILIPHONESIMS__ as $iphone_sim)
-                                                <option value="{{ $iphone_sim->id }}">{{ $iphone_sim->name }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
+                                <div class="form-group mb-30 iphone-sim">
+                                    <input type="text" name="service_type" placeholder="Service Type">
                                 </div>
-                                <p >Price: $</p>
-                                <p>Estimated Delivery Time: </p>
 
                             </div>
 
