@@ -1,0 +1,1285 @@
+
+<!-- saved from url=(0066)chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/fonts/open_sans/open_sans.css">
+
+  <link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/css/main.css">
+  <link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/css/main.css">
+  
+  <link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/font_awesome/css/font_awesome.css">
+  <link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/fontello/css/fontello.css">
+  <link href="./New Tab_files/css" rel="stylesheet">
+
+<script src="./New Tab_files/cb=gapi(1).loaded_0" async=""></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/loader.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./New Tab_files/button.5f64a1a5864e1229f84c8defd65341b4.js.download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./New Tab_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./New Tab_files/util.css"><link id="load-css-2" rel="stylesheet" type="text/css" href="./New Tab_files/table.css"><link id="load-css-3" rel="stylesheet" type="text/css" href="./New Tab_files/format.css"><script type="text/javascript" charset="UTF-8" src="./New Tab_files/jsapi_compiled_format_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/jsapi_compiled_default_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/jsapi_compiled_ui_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/jsapi_compiled_corechart_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/jsapi_compiled_table_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/stats.js.download"></script><script type="text/javascript" charset="UTF-8" src="./New Tab_files/AuthenticationService.Authenticate"></script></head>
+<body>
+
+  <div id="fader" style="display: block; background-image: url(&quot;https://dgqcbki4b05ac.cloudfront.net/rf5sv5dv1zc-arto-marttinen1482689886.jpg&quot;);" class="fadein">
+    <div class="load-bar" id="global-loader" style="display: none">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div id="notification" style="display: none;" data-translate="">
+      The password reset instructions have been sent to your email address, you should receive them within 10 minutes
+    </div>
+    <!-- <div class="overlay" id="overlay_time" style="display: none;background-image: url(images/overlay-time.png);"></div> -->
+
+    <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" id="manual_location_container" style="display: none">
+      <form id="manual_location_form" class="transparent_form" data-form-analytic="" data-category="Location" data-action="Submit Manual Location">
+        <div>
+        <input id="geocomplete" type="text" placeholder="Type in your city" data-translate="" data-translate-key="manual_location_tip" data-translate-attr="placeholder" data-text="manual_location_tip">
+        </div>
+        <div>
+        <button id="find" type="button" value="find"></button>
+        </div>
+      </form>
+    </div>
+
+    <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" id="site_blocked" style="display: none">
+      <div id="site_blocker_container">
+        <h1 id="blocked_message" class="shadow"></h1>
+      </div>
+    </div>
+
+    <div id="user_info_form" class="shadow" style="display: none">
+      <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle">
+        <div id="user_login_choice_input">
+          <h1 class="slogan">Transform your Productivity</h1>
+          <div class="content">
+            <div>
+              <a id="login_with_facebook" type="submit" class="btn btn-social btn-auth-provider btn-block btn-facebook"><i class="fa fa-facebook-official"></i> <span data-translate="">Continue with Facebook</span></a>
+            </div>
+            <div class="item">
+              <a type="submit" class="btn btn-social btn-auth-provider btn-block btn-google" id="login_with_google">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
+                <g id="surface1">
+                <path style=" fill:#FFC107;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 33.652344 32.65625 29.222656 36 24 36 C 17.371094 36 12 30.628906 12 24 C 12 17.371094 17.371094 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 12.953125 4 4 12.953125 4 24 C 4 35.046875 12.953125 44 24 44 C 35.046875 44 44 35.046875 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                <path style=" fill:#FF3D00;" d="M 6.304688 14.691406 L 12.878906 19.511719 C 14.65625 15.109375 18.960938 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 16.316406 4 9.65625 8.335938 6.304688 14.691406 Z "></path>
+                <path style=" fill:#4CAF50;" d="M 24 44 C 29.164063 44 33.859375 42.023438 37.410156 38.808594 L 31.21875 33.570313 C 29.210938 35.089844 26.714844 36 24 36 C 18.796875 36 14.382813 32.683594 12.71875 28.054688 L 6.195313 33.078125 C 9.503906 39.554688 16.226563 44 24 44 Z "></path>
+                <path style=" fill:#1976D2;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 34.511719 30.238281 33.070313 32.164063 31.214844 33.570313 C 31.21875 33.570313 31.21875 33.570313 31.21875 33.570313 L 37.410156 38.808594 C 36.972656 39.203125 44 34 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                </g>
+              </svg> 
+            <span data-translate="">Continue with Google</span></a>
+            </div>
+            <div class="item divider" data-translate="">
+            OR
+            </div>
+            <div class="item">
+              <a type="submit" class="btn btn-social btn-block btn-primary" id="login_locally" data-translate="">Login/Sign Up</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="user_name_input" style="display: none">
+          <h1 data-translate="" data-translate-key="name_tip" data-text="name_tip">Hey there! what’s your name?</h1>
+          <form class="uk-form" id="user_name_form" autocomplete="off" data-form-analytic="" data-category="Auth" data-action="Submit User Name">
+            <input type="text" name="name" id="name">
+            <div class="error_container">
+            </div>
+            <button type="submit" class="btn btn-shadow" data-translate="">Next</button>
+          </form>
+        </div>
+
+        <div id="user_email_input" style="display: none">
+          <h1></h1>
+          <form class="uk-form" id="user_email_form" autocomplete="off">
+            <input type="email" name="email" autocorrect="off" spellcheck="false" id="email">
+            <div class="error_container">
+              <div id="email_errors">
+
+              </div>
+            </div>
+            <button type="submit" class="btn btn-shadow" data-translate="">Next</button>
+          </form>
+        </div>
+
+        <div id="user_password_block" style="display: none">
+          <form class="uk-form" id="user_password_form" autocomplete="off" novalidate="novalidate">
+            <div id="user_password_input" style="display: none">
+              <h1 id="password_tip" data-translate="">Ok, choose a password now</h1>
+              <input type="password" name="password" id="password">
+
+            </div>
+
+            <div id="user_confirm_password_input" style="display: none;margin-top: 80px">
+              <h1 data-translate="" data-text="Retype password">Retype password</h1>
+              <input type="password" name="confirm_password" id="confirm_password">
+              <p class="error"></p>
+            </div>
+            <div class="error_container">
+              <div id="password_errors">
+
+              </div>
+            </div>
+            <button type="submit" class="btn btn-shadow" data-translate="">Next</button>
+          </form>
+        </div>
+
+        <div id="branding">
+          <img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/images/logos/tile.png" height="48">
+        </div>
+
+      </div>
+
+      <div id="auth_info">
+        <div id="login_without_email" class="btn btn-shadow" style="display: none" data-translate="" data-text="Login without email">Login without email</div>
+        <div id="change_credentials" style="display: none">
+          <div id="change_email" class="btn btn-shadow" data-translate="" data-text="Go back">Go back</div>
+          <div id="change_password" style="display: none" class="btn btn-shadow" data-translate="">Forgot Password?</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="login_intermediate_popup" class="lean_modal_container" style="display: none">
+      <div class="lean_modal">
+        <h2 class="header" data-translate="">
+          Login
+        </h2>
+        <div class="content">
+          <p data-translate="">
+            Please login to like Greetings and save your favorites ones
+          </p>
+          <p>
+            <a class="close_button">Ok</a>
+            <a class="close_button open_login_dialog">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="timer_modal" class="lean_modal_container" style="display: none">
+      <div class="lean_modal">
+        <h2 class="header" data-translate="" data-translate-key="concentration_timer" data-text="concentration_timer">Concentration Timer</h2>
+        <div class="content">
+          <p>
+            <span class="display_name">Sahib</span>, <span data-translate="" data-text="time is  up!">time is  up!</span>
+          </p>
+          <p>
+            <a class="close_button">Ok</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="settings-widget-options-modal" class="lean_modal_container" style="display: none">
+      <div class="lean_modal">
+        <h2 class="header" data-translate="">
+        </h2>
+        <div class="content">
+          <p class="description">
+          </p>
+          <p>
+          </p><p>
+            <a class="close_button">Ok</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <div id="permission_modal" class="lean_modal_container" style="display: none">
+     <div class="lean_modal">
+       <h2 class="header" data-translate="">
+        Concentration Timer
+      </h2>
+      <div class="content">
+        <p class="description">
+        </p>
+        <p style="margin-top: 60px">
+          <a class="close_button ok" data-translate="" data-text="Continue">Continue</a>
+          <a class="close_button close" data-translate="" style="background: none" data-text="Maybe later">Maybe later</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="dashboard">
+
+<!--     <div class="overlay" id="overlay" style="display: none;background-image: url(images/overlay-border.png);"></div>
+    <div class="overlay" id="overlay_top" style="display: none;background-image: url(images/overlay-top.png);"></div>
+    <div class="overlay" id="overlay_bottom" style="display: none;background-image: url(images/overlay-bottom.png);"></div> -->
+
+    <div id="date_container" class="shadow-light">
+      <div id="date_wrapper">
+      <div id="date_event_container" style="display: inline;">
+        <a id="date" class="track" data-category="Calendar" data-action="click" data-label="Connect to calendar">Sunday 4 March 2018</a>
+        <div id="events" style="display: none">
+      <div id="authorize-div"></div>
+      <div id="event-list-container">
+        <div id="event-list" style="margin-right: 10px"></div>
+        <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" id="event-settings-trigger">
+          <i class="fa fa-cog"></i>
+        </a>
+        <div class="widget-settings-container">
+            <div class="widget-settings" style="display: none;padding: 0">
+              <p class="todo-settings-title" style="font-size: 14px!important;color: #999">Calendar Settings</p>
+              <div class="widget-settings-content" style="margin-top: 0">
+                <p class="title" data-translate="" style="margin-bottom:2px;color: #999" data-text="Calendar Account">Calendar Account</p>
+                <p style="margin-bottom: 15px">
+                  <a id="calendar_account_disconnect" style="cursor: pointer" data-translate="" data-category="Settings" data-action="click" data-label="Disconnect Calendar" data-text="Disconnect">Disconnect</a><span class="separator">/</span><a id="calendar_account_toggle" style="cursor: pointer" data-translate="" data-category="Settings" data-action="click" data-label="Switch Calendar Account" data-text="Switch">Switch</a>
+                </p>
+                <p class="title" data-translate="" style="margin-bottom: 2px;color: #999">Calendars Displayed:</p>
+                <div id="calendar-list">
+                  <label>
+                    <input type="checkbox" class="calendar-category-checkbox">Work
+                  </label>
+                  <label>
+                    <input type="checkbox" class="calendar-category-checkbox">Work
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div id="latest-event-container">
+
+        <span id="event_notification_popup" style="display:none" data-translate="" data-text="Click on the date to show Google Calendar events">Click on the date to show Google Calendar events</span>
+        <div id="latest-event"></div>
+      </div>
+    </div>
+    
+    <span class="search-bar" id="search">
+      <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" id="bookmark_trigger" style="display: none"><i class="widget-icon bold ft icon-bookmark" style="font-size: 22px!important;"></i></a>
+      <form action="https://www.google.com/search" id="search_form" autocomplete="off" data-form-analytic="" data-category="Search" data-action="Submit Google Search" style="display: none">
+      <i class="widget-icon fa fa-search"></i>
+        <input type="text" name="q" class="shadow-light" id="search_input">
+      </form>
+    </span>
+
+    <div id="bookmark_container" style="display:none">
+      <div style="position:relative">
+        <div class="accordion">
+
+          <a class="title track" id="chrome_new_tab" target="_blank" href="chrome-search://local-ntp/local-ntp.html" data-category="Other" data-action="click" data-label="Open Default New Tab"><i class="fa fa-caret-right"></i> <span data-translate="" data-text="Chrome New Tab">Chrome New Tab</span></a>
+          
+          <a class="accordion_title track" id="top_sites_folder" data-category="Bookmarks" data-action="click" data-label="Toggle Top Sites"><i class="fa fa-caret-right"></i> <span data-translate="" data-text="Most Visited">Most Visited</span></a>
+          <div class="top_sites accordion accordion_content" style="display: none;"></div>
+
+          <a class="accordion_title track" id="bookmarks_folder" style="margin-bottom: 0" data-category="Bookmarks" data-action="click" data-label="Toggle Bookmarks"><i class="fa fa-caret-right"></i> <span data-translate="" data-text="Bookmarks">Bookmarks</span></a>
+          <div class="bookmarks accordion_content" style="display: none;"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="top_header">
+      <span id="welcome_message"></span>
+    </div>
+
+    <div class="weather track" id="weather" style="" data-category="Weather" data-action="mouseover" data-label="View Weather Forecast">
+      <div class="metric-weather shadow-light">
+        <ul>
+          <li id="location">Baku</li>
+          <li id="temperature"><p><i class="wi wi-cloudy-gusts"></i>11°c</p></li>
+        </ul>
+      </div>
+    </div>
+    <div id="weather_forecast" style="display: none">
+      <div class="day day-0">
+        <div class="name">Sun</div>
+        <div class="icon"><i class="wi wi-cloudy-gusts"></i></div>
+        <div class="temp">
+          <span class="high">18</span>
+          <span class="low">6</span>
+        </div>
+      </div>
+
+      <div class="day day-1">
+        <div class="name">Mon</div>
+        <div class="icon"><i class="wi wi-cloudy-gusts"></i></div>
+        <div class="temp">
+          <span class="high">12</span>
+          <span class="low">6</span>
+        </div>
+      </div>
+
+      <div class="day day-2">
+        <div class="name">Tue</div>
+        <div class="icon"><i class="wi wi-day-cloudy"></i></div>
+        <div class="temp">
+          <span class="high">8</span>
+          <span class="low">5</span>
+        </div>
+      </div>
+
+      <div class="day day-3">
+        <div class="name">Wed</div>
+        <div class="icon"><i class="wi wi-day-cloudy"></i></div>
+        <div class="temp">
+          <span class="high">10</span>
+          <span class="low">6</span>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div class="uk-text-contrast uk-flex uk-text-center uk-flex-center uk-flex-middle" id="general_info">
+      <div>
+        <h1 class="uk-text-contrast shadow" id="time">
+          <span class="hours">12</span><span class="separator">:</span><span class="minutes">21</span>
+        </h1>
+        <p class="uk-text-large shadow-light" id="welcome_message_container" data-id="6384"><span id="welcome_message"><span class="balance-text" style="">Are you <span class="display_name inline_editable" data-type="text">Sahib</span> from the block?</span><div id="greeting_container"><span id="greeting_like" class="can_hover fa fa-heart-o"></span> <span id="greeting_like_count">258</span></div><p class="greeting_sharer" id="greeting_sharer"><a id="refresh_greeting" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#"><i class="fa fa-rotate-right"></i></a><a class="greeting_sharer_twitter" target="_blank" href="https://twitter.com/intent/tweet?text=%22Are%20you%20Sahib%20from%20the%20block?%22%20-%20Thank%20you%20@ultidash%20:)"><i class="fa fa-twitter"></i></a></p></span></p>
+      </div>
+    </div>
+
+
+    <div class="uk-text-contrast">
+
+      <div id="footer">
+
+        <div class="uk-text-contrast uk-text-center">
+
+        <div id="footer-widgets">
+
+        <div class="widget-icon" id="sitetracker-widget-icon" style="">
+          <i style="font-size: 22px!important;" class="ft bold icon-globe"></i>
+        </div>
+
+        <div class="widget-box-container" id="site-tracker-widget" style="display:none;text-align: left">
+          <div class="widget-box">
+            <div class="title"><span>Site Tracker</span></div>
+             <div id="website_nav" style="display:none">
+                <a id="website_today" class="active" style="margin-left: 5px;padding-right:5px" data-translate="" data-analytic-url="today" data-text="Today">Today</a><span class="separator">|</span>
+                <a id="website_all" data-translate="" data-analytic-url="all-time" data-text="All Time">All Time</a>
+              </div>
+
+              <div class="uk-text-contrast" id="site_tracker_empty_message" style="display:none">
+                <span data-translate="" data-translate-key="site_tracker_tip" data-text="site_tracker_tip">Browse the web and come back to this section later</span>,&nbsp;<span class="display_name">Sahib</span>
+              </div>
+
+              <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" id="site_tracker_chart_loading" data-translate-key="Loading" data-translate="" data-text="Loading">Loading...</div>
+
+              <div id="site_tracker_content" style="display:none">
+                <div id="website_chart"></div>
+                <div id="website_table" class="title-name" style="background: rgba(000,000,000,0.5);margin-bottom: 0"></div>
+              </div>
+          </div>
+        </div>
+
+        <div id="siteblocker-widget" style="display: none">
+          <div class="widget-box-container" id="site_blocker" style="text-align: left">
+            <div class="widget-box">
+              <div class="title"><span>Site Blocker</span><div class="onoffswitch" id="siteblockertoggle-switch"><input type="checkbox" name="siteblockertoggle" id="siteblockertoggle" class="onoffswitch-checkbox"><label class="onoffswitch-label" for="siteblockertoggle"></label></div></div>
+               
+                <div class="onoffswitch" id="timersiteblockertoggle-switch"><input type="checkbox" name="timersiteblockertoggle" id="timersiteblockertoggle" checked="" class="onoffswitch-checkbox"><label class="onoffswitch-label" for="timersiteblockertoggle"></label></div>
+
+               <span style="font-size: 16px" data-translate="">Activate with</span>
+               <div style="font-size: 16px" data-translate="">Concentration Timer</div>
+
+               <div class="title-name" style="background: rgba(000,000,000,0.5);margin: 20px 0">
+                <p style="margin-bottom: 10px;font-size: 16px" data-translate="" data-text="Blacklisted Websites">Blacklisted Websites</p>
+
+                <section class="todoapp">
+                  <header class="header">
+                    <form id="siteblockerForm" autocomplete="off" novalidate="novalidate">
+                      <input class="new-todo" name="website" placeholder="www.example.com">
+                        <div id="siteblocker_errors_container">
+                            <div id="siteblocker_errors"></div>
+                        </div>
+                    </form>
+                  </header>
+
+                  <section class="main" style="max-height: 140px; display: none;">
+                    <ul class="todo-list" style="height: auto">
+                </ul>
+                  </section>
+                </section>
+
+                <script async="" src="./New Tab_files/analytics.js.download"></script><script class="todo-template" type="text/x-handlebars-template">
+                  {{#this}}
+                  <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                    <div class="view">
+                      <label>{{title}}</label>
+                      <button class="destroy"></button>
+                    </div>
+                    <input class="edit" value="{{title}}">
+                  </li>
+                  {{/this}}
+                </script>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-icon" id="siteblocker-widget-icon" style="">
+          <i class="fa fa-shield"></i>
+        </div>
+
+        <div id="timer-widget" style="display: none">
+          <div class="widget-box-container">
+            <div id="timer">
+              <div class="widget-box" style="padding-bottom: 10px">
+                <div class="title"><span>Concentration Timer</span></div>
+                <span id="set_timer_container">
+                  <span id="set_timer">
+                    <form id="timer_form">
+                      <input id="set_hour" name="hour" type="number" value="00"><span>h</span>
+                      <input id="set_minute" name="minute" type="number" value="05"><span>m</span>
+                      <input id="set_second" name="second" type="number" value="00"><span>s</span>
+                      <button type="submit" style="display: none"></button>
+                    </form>
+                  </span>
+                  <div>
+                  <a class="track" id="start_timer" style="" data-category="Concentration Timer" data-action="click" data-label="Start Timer"><i class="fa fa-play"></i></a>
+                  <a class="track" id="timer_pause" style="display: none" data-category="Concentration Timer" data-action="click" data-label="Pause Timer"><i class="fa fa-pause"></i></a>
+                  <a class="track" id="reset_timer" style="display: none" data-category="Concentration Timer" data-action="click" data-label="Reset Timer"><i class="fa fa-repeat"></i></a>
+                  </div>
+                </span>
+
+                <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" id="stat_chart_loading" data-translate="true" data-translate-key="Loading" data-text="Loading">Loading...</div>
+
+                  <div id="stat_container" style="display:none">
+                    <div id="stat_chart_content" style="display:none">
+                      <!-- <div class="uk-text-contrast uk-text-center" id="stats_empty_message" style="display:none" data-translate data-translate-key="timer_tip">
+                        Daily Goal
+                      </div> -->
+
+                      <div style="text-align:center">
+                        <form id="daily_goal_form" autocomplete="off" data-form-analytic="" data-category="Daily Goal" data-action="Submit Daily Goal">
+                          <p style="float:none" id="daily_goal"><span data-translate="">Daily Goal</span>:<input id="daily_goal_hour" value="00" style="margin-left:5px"><span data-translate="">h</span><input id="daily_goal_minute" value="00"><span data-translate="">m</span></p>
+
+                          <button type="submit" style="display: none"></button>
+                        </form>
+
+                      </div>
+
+                      <div id="daily_goal_chart"></div>
+
+                      <div id="stats_bottom" class="customize">
+                        <ul>
+                          <li>
+                            <p data-translate="" data-text="Concentration Time Today">Concentration Time Today</p>
+                            <p class="pull-right" id="concentration_today">0 min</p>
+                          </li>
+
+                          <li>
+                            <p data-translate="" data-text="Concentration Time Overall">Concentration Time Overall</p>
+                            <p class="pull-right" id="concentration_overall">0 min</p>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    </div>
+
+                  <a class="stats-toggle" id="stats-hide" style="display: none">Hide Stats</a>
+                  <a class="stats-toggle" id="stats-show" style="">Show Stats</a>
+
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="widget-icon" id="timer-widget-icon">
+          <i style="font-size: 22px!important;" class="ft icon-stopwatch"></i>
+        </div>
+
+        </div>
+      </div>
+
+        <div id="todo_container" style="">
+
+         <!--     <div class="overlay" id="overlay" style="display: none;background-image: url(images/overlay-border.png);"></div>
+    <div class="overlay" id="overlay_top" style="display: none;background-image: url(images/overlay-top.png);"></div>
+    <div class="overlay" id="overlay_bottom" style="display: none;background-image: url(images/overlay-bottom.png);"></div> -->
+    <div id="todo_toggle" class="todo_toggle">
+      <div id="todo_notification" class="count_notification" style="display:none"></div>
+      <i class="widget-icon fa fa-list-ul" style="font-size: 26px!important;"></i>
+    </div>
+
+          <div id="todo_collection" style="display: none">
+
+            <div id="todoist_container" class="ui-resizable" style="display: none;">
+              <div id="todoist_projects">
+                <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" class="widget-settings-trigger" id="todoist_settings_toggle" style="float: right;margin-left: 5px">
+                  <i class="fa fa-cog"></i>
+                </a>
+                <a id="todoist_current_project"><span class="name"></span> <i class="fa fa-chevron-down"></i> <span class="todo_count">0</span></a><img style="float: right;margin-top: -3px" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/images/todoist.png" height="25px">
+              </div>
+              <div id="todoist_projects_dropdown" class="todoist_dropdown" style="display: none;">
+              </div>
+
+              <div id="todoist_settings_dropdown" class="todoist_dropdown" style="display: none;">
+                <p class="todo-settings-title">Todo Settings</p>
+                <p class="title" data-translate="" style="margin-bottom: 2px;color: #999">Format</p>
+                 <div class="radio_label" style="margin-bottom: 15px">
+                   <input type="radio" value="basic" class="todo_format_radio todo_format_one" id="todo_format_one_basic">
+                   <label for="todo_format_one_basic" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to basic" data-text="Basic">Basic</label><span class="separator">/</span>
+                   <input type="radio" value="matrix" class="todo_format_radio todo_format_two" id="todo_format_two_basic">
+                   <label for="todo_format_two_basic" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to matrix" data-text="Matrix">Matrix</label><span class="separator">/</span>
+                    <input type="radio" value="todoist" class="todo_format_radio todo_format_todoist" id="todo_format_todoist_basic">
+                   <label for="todo_format_todoist_basic" class="track" data-category="Settings" data-action="click" data-label="Todo format to todoist"><div style="display: inline-block;"><img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/images/todoist.png" height="20px" style="vertical-align: middle;"> <div style="display: inline-block;" data-translate="">Todoist</div></div></label>
+                 </div>
+                <p class="title" data-translate="" style="margin-bottom: 2px;color: #999">Todoist Account</p>
+                <a id="todoist_logout" style="padding: 0;color: fff">Logout</a>
+              </div>
+
+                <div id="todoist_todo">
+                  <span class="todo_resize_indicator"><i class="fa fa-arrow-left"></i></span>
+
+                  <section class="todoapp">
+                    <header class="header">
+                      <input class="new-todo" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                    </header>
+
+                    <section class="main">
+                      <ul id="todoist_todo_list" class="todo-list">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index="{{index}}" data-type="{{type}}">
+                      <div class="view">
+                        <input class="todo_task toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                        <label>{{title}}</label>
+                        <button class="destroy"></button>
+                      </div>
+                      <input class="edit" value="{{title}}">
+                    </li>
+                    {{/this}}
+                  </script>
+
+                </div>
+            <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
+
+            <div id="basic_todo" style="width: 200px; height: 200px;" class="ui-resizable">
+              <span class="todo_resize_indicator"><i class="fa fa-arrow-left"></i></span>
+              <div id="all_todo">
+
+                <div class="widget-settings-container">
+                  <div class="widget-settings" style="display: none">
+                    <!-- <a href="#" class="widget-settings-back">
+                      <i class="fa fa-arrow-left"></i>
+                    </a> -->
+                    <div class="widget-settings-content">
+                      <p class="todo-settings-title">Todo Settings</p>
+                      <p class="title" data-translate="" style="margin-bottom: 2px;color: #999;font-size: 12px">Format</p>
+                       <span class="radio_label">
+                         <input type="radio" value="basic" class="todo_format_radio todo_format_one" id="todo_format_one_basic">
+                         <label for="todo_format_one_basic" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to basic" data-text="Basic">Basic</label><span class="separator">/</span>
+                         <input type="radio" value="matrix" class="todo_format_radio todo_format_two" id="todo_format_two_basic">
+                         <label for="todo_format_two_basic" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to matrix" data-text="Matrix">Matrix</label><span class="separator">/</span>
+                          <input type="radio" value="todoist" class="todo_format_radio todo_format_todoist" id="todo_format_todoist_basic">
+                         <label for="todo_format_todoist_basic" class="track" data-category="Settings" data-action="click" data-label="Todo format to todoist"><div style="display: inline-block;"><img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/images/todoist.png" height="20px" style="vertical-align: middle;"> <div style="display: inline-block;" data-translate="">Todoist</div></div></label>
+                       </span>
+                    </div>
+                  </div>
+                  <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" class="widget-settings-trigger">
+                    <i class="fa fa-cog"></i>
+                  </a>
+                </div>
+
+                <section class="todoapp">
+                  <header class="header">
+                    <input class="new-todo" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                  </header>
+
+                  <section class="main" style="display: none;">
+                    <ul id="all_todo_list" class="todo-list ui-sortable">
+                </ul>
+                  </section>
+                </section>
+
+                <div class="todos-message no-todos" style="height: calc(100% - 48px)">
+                  <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle">
+                    <div class="image">
+                      <img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/images/smiley_sunglasses.png" width="70" height="70">
+                    </div>
+                    <div>
+                      Add a todo and get some work done, <span class="display_name">Sahib</span>!
+                    </div>
+                  </div>
+                </div>
+
+                <div class="todos-message done-todos" style="height: calc(100% - 48px)">
+                  <div class="uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle">
+                    <div class="image">
+                      <img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/images/smiley_sunglasses.png" width="70" height="70">
+                    </div>
+                    <div>
+                      All done, great job <span class="display_name">Sahib</span>!
+                    </div>
+                  </div>
+                </div>
+
+                <script class="todo-template" type="text/x-handlebars-template">
+                  {{#this}}
+                  <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index="{{index}}" data-type="{{type}}">
+                    <div class="view">
+                      <input class="todo_task toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                      <label>{{title}}</label>
+                      <button class="destroy"></button>
+                    </div>
+                    <input class="edit" value="{{title}}">
+                  </li>
+                  {{/this}}
+                </script>
+
+              </div>
+            <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
+
+
+            <div id="matrix_todo" class="todo ui-resizable" style="display: none">
+              <div class="widget-settings-container">
+                <div class="widget-settings" style="display: none">
+                  <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" class="widget-settings-back">
+                    <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <div class="widget-settings-content">
+                    <p class="todo-settings-title">Todo Settings</p>
+                    <p class="title" data-translate="" style="margin-bottom: 2px;color: #999;font-size: 12px">Format</p>
+                     <span class="radio_label">
+                       <input type="radio" value="basic" class="todo_format_radio todo_format_one" id="todo_format_one_matrix">
+                       <label for="todo_format_one_matrix" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to basic" data-text="Basic">Basic</label><span class="separator">|</span>
+                       <input type="radio" value="matrix" class="todo_format_radio todo_format_two" id="todo_format_two_matrix">
+                       <label for="todo_format_two_matrix" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Todo format to matrix" data-text="Matrix">Matrix</label><span class="separator">|</span>
+                        <input type="radio" value="todoist" class="todo_format_radio todo_format_todoist" id="todo_format_todoist_matrix">
+                       <label for="todo_format_todoist_matrix" class="track" data-category="Settings" data-action="click" data-label="Todo format to todoist"><div style="display: inline-block;"><img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/images/todoist.png" height="20px" style="vertical-align: middle;"> <div style="display: inline-block;" data-translate="">Todoist</div></div></label>
+                     </span>
+                  </div>
+                </div>
+                <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" class="widget-settings-trigger">
+                  <i class="fa fa-cog"></i>
+                </a>
+              </div>
+
+              <span class="todo_resize_indicator"><i class="fa fa-arrow-left"></i></span>
+              <div class="top-bar2">
+                <div class="urgent" data-translate="" data-text="Urgent">Urgent</div>
+                <div class="urgent" data-translate="" data-text="Less Urgent">Less Urgent</div>
+              </div>
+              <div class="horizontal">
+                <div class="urgent vertical_text" data-translate="" data-text="Important">Important</div>
+                <div class="urgent vertical_text" data-translate="" data-text="Less Important">Less Important</div>
+              </div>
+
+              <div class="main-square">
+
+                <div class="one-square" id="imp_urgent_todo">
+
+                  <section class="todoapp">
+                    <header class="header">
+                      <input class="new-todo" data-type="not_imp" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                    </header>
+
+                    <section class="main" style="height: calc(100% - 25px)">
+                      <ul id="imp_urgent_todo_list" class="todo-list ui-sortable" style="height: calc(100% - 25px)">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li {{#if completed}} class="completed" {{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                      <div class="view">
+                        <input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                        <label>{{title}}</label>
+                        <button class="destroy"></button>
+                      </div>
+                      <input class="edit" value="{{title}}">
+                    </li>
+                    {{/this}}
+                  </script>
+
+                  <div class="label">1</div>
+
+                </div>
+
+                <div class="one-square" id="imp_not_urgent_todo">
+
+                  <div class="label">2</div>
+
+                  <section class="todoapp">
+                    <header class="header">
+                      <input class="new-todo" data-type="not_imp" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                    </header>
+
+                    <section class="main" style="height: calc(100% - 25px)">
+                      <ul id="imp_not_urgent_todo_list" class="todo-list ui-sortable" style="height: calc(100% - 25px)">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li {{#if completed}} class="completed" {{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                      <div class="view">
+                        <input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                        <label>{{title}}</label>
+                        <button class="destroy"></button>
+                      </div>
+                      <input class="edit" value="{{title}}">
+                    </li>
+                    {{/this}}
+                  </script>
+
+                </div>
+
+                <div class="one-square" id="not_imp_urgent_todo">
+
+                  <div class="label">3</div>
+
+                  <section class="todoapp">
+                    <header class="header">
+                      <input class="new-todo" data-type="not_imp" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                    </header>
+
+                    <section class="main">
+                      <ul id="not_imp_urgent_todo_list" class="todo-list ui-sortable">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                      <div class="view">
+                        <input class="todo_task toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                        <label>{{title}}</label>
+                        <button class="destroy"></button>
+                      </div>
+                      <input class="edit" value="{{title}}">
+                    </li>
+                    {{/this}}
+                  </script>
+
+                </div>
+
+                <div class="one-square" id="not_imp_not_urgent_todo">
+
+                  <div class="label">4</div>
+
+                  <section class="todoapp">
+                    <header class="header">
+                      <input class="new-todo" data-type="imp" placeholder="What needs to be done?" data-translate="true" data-translate-key="todo_tip" data-translate-attr="placeholder" data-text="todo_tip">
+                    </header>
+
+                    <section class="main">
+                      <ul id="not_imp_not_urgent_todo_list" class="todo-list ui-sortable">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                      <div class="view">
+                        <input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+                        <label>{{title}}</label>
+                        <button class="destroy"></button>
+                      </div>
+                      <input class="edit" value="{{title}}">
+                    </li>
+                    {{/this}}
+                  </script>
+
+                  <script class="footer-template" type="text/x-handlebars-template">
+                    <span class="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
+                    <ul class="filters">
+                      <li>
+                        <a {{#eq filter 'all'}}class="selected"{{/eq}} href="#/all">All</a>
+                      </li>
+                      <li>
+                        <a {{#eq filter 'active'}}class="selected"{{/eq}}href="#/active">Active</a>
+                      </li>
+                      <li>
+                        <a {{#eq filter 'completed'}}class="selected"{{/eq}}href="#/completed">Completed</a>
+                      </li>
+                    </ul>
+                    {{#if completedTodos}}<button class="clear-completed">Clear completed</button>{{/if}}
+                  </script>
+
+                </div>
+              </div>
+            <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
+          </div>
+        </div>
+
+        <button id="setting_toggle"><i class="widget-icon ft icon-cog"></i><span id="setting_features_notification" class="features_notification" style="display: none"><span class="count_notification primary_notification"><i class="fa fa-exclamation"></i></span></span></button>
+        <div id="image_info" class="shadow-light" style="display: none;">
+          <div class="title"><span class="city"></span><span class="country"></span></div>
+          <div class="credits"><a target="_blank" class="source_link"><span data-translate="">Photo by</span> <span class="photographer_name"></span></a></div>
+        </div>
+
+        <div id="mail_notifications">
+          <div id="mail_notification_container" style="">
+            <div id="mail_notification_popup" style="display:none"></div>
+            <a id="mail_notification_count" href="https://mail.google.com/" class="count_notification" style="display:none;text-decoration: none;"></a>
+            <a class="track widget-icon" id="mail_notification" href="https://mail.google.com/" data-category="Mail" data-action="click" data-label="Go to google mail website"><i class="fa bold fa-envelope-o" style="font-size: 26px!important;"></i></a>
+          </div>
+        </div>
+
+        <div id="setting_popup" class="popup" style="display:none">
+
+          <div class="tabs">
+            <nav> 
+              <a class="selected" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#widgets_tab_content" id="general_tab" data-translate="" data-analytic-url="general">Widgets</a> 
+              <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#account_tab_content" data-translate="" data-analytic-url="account-personalization">Account and Personalization</a>
+              <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#tab_background" data-translate="" data-analytic-url="background" data-text="Background">Background</a>
+              <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#content5" data-translate="" data-analytic-url="greetings" data-text="Greetings">Greetings</a>
+              <div id="settings_bottom">
+                <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#content8" id="whats_new_trigger" data-analytic-url="whats-new"><span><span data-translate="" data-translate-key="whats_new" data-text="whats_new">What's New</span><span class="features_notification" id="features_notification" style="display: none"><span class="count_notification primary_notification"><i class="fa fa-exclamation"></i></span></span></span></a>
+                <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#content6" data-translate="" data-analytic-url="help" data-text="Help">Help</a> 
+                <a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#content7" data-translate="" data-analytic-url="about" data-text="About">About</a>
+              </div>
+            </nav>
+
+            <div class="content visible" id="widgets_tab_content" style="padding-bottom: 0">
+
+              <div class="title-name" style="margin-bottom:15px">
+                <span class="title">Widgets</span>
+                <p data-translate="" style="margin-top:3px;color: #999">Click on the widgets below to enable or disable them</p>
+              </div>
+
+              <div class="widgets widgets-toggle">
+                <div class="items">
+                  <span class="item active" id="settings-todo-toggle"><i class="fa fa-list-ul"></i><span class="title">Todo</span></span>
+                  <span class="item active" id="settings-siteblocker-toggle"><i class="fa fa-shield"></i><span class="title">Site Blocker</span></span>
+                  <span class="item active" id="settings-sitetracker-toggle"><i class="ft bold icon-globe"></i><span class="title">Site Tracker</span></span>
+                </div>
+                <div class="items">
+                  <span class="item active" id="settings-timer-toggle"><i class="ft icon-stopwatch"></i><span class="title">Concentration Timer</span></span>
+                  <span class="item active" id="settings-mail-toggle"><i class="fa bold fa-envelope-o"></i><span class="title">Mail</span></span>
+                  <span class="item active" id="settings-calendar-toggle"><i class="fa fa-calendar"></i><span class="title">Calendar</span></span>
+                </div>
+                <div class="items">
+                  <span class="item active" id="settings-weather-toggle"><i class="ft icon-sun"></i><span class="title">Weather</span></span>
+                  <span class="item" id="settings-bookmarks-toggle"><i class="bold ft icon-bookmark"></i><span class="title">Bookmarks</span></span>
+                  <span class="item" id="settings-search-toggle"><i class="fa fa-search"></i><span class="title">Search</span></span>
+                </div>
+              </div>
+           </div>
+
+           <div class="content" id="account_tab_content">
+
+              <div class="title-name" style="position: relative;">
+                <div class="logged-in">
+                  <a class="display_email right-top-content" style="color: #999">xpressam@gmail.com</a>
+                  <a style="cursor: pointer" id="logout" class="track right-bottom-content" data-translate="" data-category="Settings" data-action="click" data-label="Logout">Logout</a>
+                </div>
+
+                <div class="right-bottom-content">
+                  <a style="cursor: pointer; display: none;" id="login" class="open_login_dialog track" data-translate="" data-category="Settings" data-action="click" data-label="Login" data-text="Login">Login</a>
+                </div>
+                
+                <div>
+                  <div class="title display_name inline_editable" id="edit_name">Sahib</div>
+                  <div class="track" id="change_name" data-translate="" data-category="Settings" data-action="click" data-label="Change Name">Change Name</div>
+                </div>
+              </div>
+
+              <div class="widgets widgets-options">
+                <div class="items">
+                  <span class="item">
+                    <div class="modal widget">
+                      <div class="modal-title" data-translate="">Font</div>
+                      <div class="modal-content">
+                        <span class="radio_label">
+                          <input type="radio" value="Open Sans" class="font_family_radio" id="font_family_open_sans">
+                          <label for="font_family_open_sans" class="track" data-category="Settings" data-action="click" data-label="Font Family to Open Sans">Open Sans</label><span class="separator">/</span>
+                          <input type="radio" value="Exo 2" class="font_family_radio" id="font_family_exo">
+                          <label for="font_family_exo" class="track" data-category="Settings" data-action="click" data-label="Font Family to Exo 2">Exo 2</label><span class="separator">/</span>
+                          <input type="radio" value="Comfortaa" class="font_family_radio" id="font_family_comfortaa">
+                          <label for="font_family_comfortaa" class="track" data-category="Settings" data-action="click" data-label="Font Family to Comfortaa">Comfortaa</label><span class="separator">/</span>
+                          <input type="radio" value="Lato" class="font_family_radio" id="font_family_lato">
+                          <label for="font_family_lato" class="track" data-category="Settings" data-action="click" data-label="Font Family to Lato">Lato</label><span class="separator">/</span>
+                          <input type="radio" value="Roboto" class="font_family_radio" id="font_family_roboto">
+                          <label for="font_family_roboto" class="track" data-category="Settings" data-action="click" data-label="Font Family to Roboto">Roboto</label><span class="separator">/</span>
+                          <input type="radio" value="Roboto Mono" class="font_family_radio" id="font_family_roboto_mono">
+                          <label for="font_family_roboto_mono" class="track" data-category="Settings" data-action="click" data-label="Font Family to Roboto Mono">Roboto Mono</label>
+                        </span>
+                       </div>
+                    </div>
+                    <span class="toggle toggle-options" id="settings-font-current">Open Sans</span>
+                    <span class="title toggle-options">Font</span>
+                  </span>
+                  <span class="item">
+                    <span class="toggle">
+                      <span class="settings-time-separator-toggle toggle-item active" id="settings-time-separator-on" data-value="on">ON</span><span class="separator">/</span><span class="settings-time-separator-toggle toggle-item" id="settings-time-separator-off" data-value="off">OFF</span>
+                    </span>
+                    <span class="title">Time Separator Animation</span>
+                  </span>
+                  <span class="item">
+                    <div class="modal widget">
+                      <div class="modal-title" data-translate="" data-text="Language">Language</div>
+                        <div class="modal-content">
+                          <span class="radio_label">
+                           <input type="radio" data-code="Eng" value="en" class="change_app_lang" id="app_lang_en">
+                           <label for="app_lang_en" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Language to Eng"><span class="flag-icon flag-icon-us"></span> Eng</label><span class="separator">/</span>
+                           <!-- <input type="radio" value="es" class="change_app_lang" id="app_lang_es">
+                           <label for="app_lang_es" data-translate><span class="flag-icon flag-icon-es"></span> Esp</label> | -->
+                           <input type="radio" data-code="Ita" value="it" class="change_app_lang" id="app_lang_it">
+                           <label for="app_lang_it" class="track" data-="" data-category="Settings" data-action="click" data-label="Language to Ita"><span class="flag-icon flag-icon-it"></span> Ita</label>
+                           <!-- <input type="radio" value="de" class="change_app_lang" id="app_lang_de">
+                           <label for="app_lang_de" data-translate><span class="flag-icon flag-icon-de"></span> Deu</label> -->
+                         </span>
+                        </div>
+                      </div>
+                    <span class="toggle toggle-options" id="settings-language-current">Eng</span>
+                    <span class="title toggle-options" data-translate="" data-text="Language">Language</span>
+                  </span>
+                </div>
+
+                <div class="items">
+                  <span class="item">
+                    <span class="toggle">
+                      <span class="settings-weather-location-toggle toggle-item active" id="settings-weather-location-auto" data-value="auto">Auto</span><span class="separator">/</span><span class="settings-weather-location-toggle toggle-item" id="settings-weather-location-manual" data-value="manual">Man</span>
+                    </span>
+                    <span class="title">Weather Location</span>
+                  </span>
+                  <span class="item">
+                    <span class="toggle">
+                      <span class="settings-weather-format-toggle toggle-item active" id="settings-weather-format-c" data-value="c">°C</span><span class="separator">/</span><span class="settings-weather-format-toggle toggle-item" id="settings-weather-format-f" data-value="f">°F</span>
+                    </span>
+                    <span class="title">Weather Unit</span>
+                  </span>
+                  <span class="item">
+                    <span class="toggle">
+                      <span class="settings-time-format-toggle toggle-item" id="settings-time-format-12" data-value="12">12h</span><span class="separator">/</span><span class="settings-time-format-toggle toggle-item active" id="settings-time-format-24" data-value="24">24h</span>
+                    </span>
+                    <span class="title">Clock format</span>
+                  </span>
+                </div>             
+              </div>
+            
+            </div>
+          
+           <div class="content" id="tab_background">
+            <div class="title-name" style="position: relative;">
+              <div class="right-bottom-content">
+                <a style="cursor: pointer" id="download_background_image" data-translate="" data-category="Settings" data-action="click" data-label="Login">Download Current</a>
+              </div>
+              <span class="title" data-translate="" data-text="Background">Background</span>
+            </div>
+
+            <div class="widgets">
+              <div class="items">
+                <span class="item">
+                  <span class="toggle">
+                    <span class="settings-custom-backgrounds-toggle toggle-item" id="settings-custom-backgrounds-on" data-value="on">ON</span><span class="separator">/</span><span class="settings-custom-backgrounds-toggle toggle-item active" id="settings-custom-backgrounds-off" data-value="off">OFF</span>
+                  </span>
+                  <span class="title">Custom Backgrounds</span>
+                </span>
+
+                <span class="item">
+                    <div class="modal widget">
+                      <div class="modal-title" data-translate="">Custom Background Rotation</div>
+                      <div class="modal-content">
+                        <span class="radio_label">
+                          <input type="radio" value="Open Sans" class="custom_background_duration_radio" data-value="new_tab" data-label="New Tab" id="custom_background_duration_new_tab">
+                          <label for="custom_background_duration_new_tab" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to new tab">New Tab</label><span class="separator">/</span>
+                          <input type="radio" value="Open Sans" class="custom_background_duration_radio" data-value="30" data-label="30 min" id="custom_background_duration_30">
+                          <label for="custom_background_duration_30" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 30 min">30min</label><span class="separator">/</span>
+                          <input type="radio" value="Exo 2" class="custom_background_duration_radio" data-value="60" data-label="1 hr" id="custom_background_duration_60">
+                          <label for="custom_background_duration_60" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 1hour">1hour</label><span class="separator">/</span>
+                          <input type="radio" value="Comfortaa" class="custom_background_duration_radio" data-value="120" data-label="2 hr" id="custom_background_duration_120">
+                          <label for="custom_background_duration_120" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 2hours">2hours</label><span class="separator">/</span>
+                          <input type="radio" value="Lato" class="custom_background_duration_radio" data-value="360" data-label="6 hr" id="custom_background_duration_360">
+                          <label for="custom_background_duration_360" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 6hours">6hours</label><span class="separator">/</span>
+                          <input type="radio" value="Roboto" class="custom_background_duration_radio" data-value="720" data-label="12 hr" id="custom_background_duration_720">
+                          <label for="custom_background_duration_720" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 12hours">12hours</label><span class="separator">/</span>
+                          <input type="radio" value="Roboto Mono" class="custom_background_duration_radio" data-value="1440" data-label="24 hr" id="custom_background_duration_1440">
+                          <label for="custom_background_duration_1440" class="track" data-category="Settings" data-action="click" data-label="Custom Background Duration to 24hours">24hours</label>
+                        </span>
+                       </div>
+                    </div>
+                    <span class="toggle toggle-options" id="settings-custom-background-duration">30 min</span>
+                    <span class="title toggle-options" data-translate="">Change Every</span>
+                  </span>
+              </div>
+            </div>
+
+            <div class="title-name settings-backgrounds" style="padding: 0;margin-top: 20px">
+
+              <div id="settings-backgrounds">
+                <input type="file" style="display:none" id="custom_bg_upload">
+                <div id="settings-backgrounds-list"><a href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/dashboard.html#" class="item" id="settings-backgrounds-add"><i class="fa fa-plus"></i></a></div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="content" id="widgets_tab_content">
+            <div class="title-name">
+              <div style="float: right">
+                  <a class="display_email">xpressam@gmail.com</a>
+                  <a style="cursor: pointer;color: #999" id="login" class="open_login_dialog track" data-translate="" data-category="Settings" data-action="click" data-label="Login" data-text="Login">Login</a>
+                  <a style="cursor: pointer;color: #999" id="logout" class="track" data-translate="" data-category="Settings" data-action="click" data-label="Logout">Logout</a>
+                </div>
+                <a style="float: left" id="edit_name" class="display_name inline_editable">Sahib</a><span class="track" id="change_name" data-translate="" data-category="Settings" data-action="click" data-label="Change Name" data-text="(change name)">(change name)</span>
+              </div>
+          </div>
+
+        <div class="content" id="content5" style="padding-bottom: 0">
+          <div class="title-name">
+            <span class="title" data-translate="" data-text="Greetings">Greetings</span>
+          </div>
+
+          <div class="widgets">
+            <span class="item">
+              <span class="toggle">
+                <span class="settings-greeting-toggle toggle-item active" id="settings-greeting-on" data-value="on">ON</span><span class="separator">/</span><span class="settings-greeting-toggle toggle-item" id="settings-greeting-off" data-value="off">OFF</span>
+              </span>
+              <span class="title">Greetings</span>
+            </span>
+
+            <span class="item">
+              <span class="toggle">
+                <span class="settings-nsfw-greeting-toggle toggle-item" id="settings-nsfw-greeting-off" data-value="off">ON</span><span class="separator">/</span><span class="settings-nsfw-greeting-toggle toggle-item active" id="settings-nsfw-greeting-on" data-value="on">OFF</span>
+              </span>
+              <span class="title">Safe for Work Filter</span>
+            </span>
+
+            <span class="item">
+              <div class="modal widget">
+                <div class="modal-title" data-translate="" data-text="Greeting Source">Greeting Source</div>
+                <div class="modal-content">
+                 <span class="radio_label" id="gretting_method_inputs">
+                   <input type="radio" value="automatic" class="gretting_method_radio" id="gretting_method_radio_automatic">
+                   <label class="track" for="gretting_method_radio_automatic" data-translate="" data-category="Settings" data-action="click" data-label="Greeting Method Automatic" data-text="Automatic">Automatic</label><span class="separator">/</span>
+                   <input type="radio" value="custom" class="gretting_method_radio" id="gretting_method_radio_custom">
+                   <label class="track" for="gretting_method_radio_custom" data-translate="" data-category="Settings" data-action="click" data-label="Greeting Method My Greetings" data-text="My Greetings">My Greetings</label><span class="separator">/</span>
+                   <input type="radio" value="mixed" class="gretting_method_radio" id="gretting_method_radio_mixed">
+                   <label class="track" for="gretting_method_radio_mixed" data-translate="" data-category="Settings" data-action="click" data-label="Greeting Method Mixed" data-text="Mixed">Mixed</label>
+                 </span>
+               </div>
+              </div>
+              <span class="toggle toggle-options" id="settings-background-method">Automatic</span>
+              <span class="title toggle-options" data-translate="" data-text="Greeting Source">Greeting Source</span>
+            </span>
+          </div>
+
+          <div class="title-name" style="margin-top:20px;margin-bottom:0;font-size: 12px">
+            <div class="tab_nav" id="greetings_nav">
+              <a class="active" data-target="#tab_greetings_submit" data-translate="" data-analytic-url="greetings" data-action="click" data-label="Open Greeting - Submit" data-text="Submit">Submit</a>
+              <span class="separator">|</span>
+              <a data-target="#tab_greetings_my" data-translate="" data-analytic-url="greetings/my-greetings" data-text="My Greetings">My Greetings</a>
+              <span class="separator">|</span>
+              <a data-target="#tab_greetings_favourites" data-translate="" data-analytic-url="greetings/favorites" data-text="Favorites">Favorites</a>
+            </div>
+          
+          <div class="tab_content" id="tab_greetings_submit">
+            
+              <form id="greeting_form" autocomplete="off" method="POST" data-form-analytic="" data-category="Greetings" data-action="Submit Anonymous Greeting">
+
+                <p style="margin-bottom:20px;text-align:center">Anonymously Submit your Greeting<br> to the Ultidash Community</p>
+
+                  <input class="new-todo" type="text" placeholder="Example: Think positive, {name}." id="greeting_input" data-translate="" data-translate-key="greeting_submit_tip" data-translate-attr="placeholder" data-text="greeting_submit_tip">
+
+                  <!-- <p style="margin-top: 20px">
+                    A few simple guidelines:
+                  </p>
+
+                  <p>
+                    <ol style="margin-top: 0">
+                      <li>You must include {name} in your message, which will magically turn into the name of the reader. Just start typing in the field above and it will appear automatically.
+                      </li>
+                      <li>Write whatever you want, It’s anonymous. Every message will be reviewed and may be published.</li>
+                      <li>Make us laugh.</li>
+                    </ol>
+
+                  </p> -->
+
+                  <div style="text-align: center" id="greeting_submit">
+                    <button type="submit" data-translate="" data-text="Submit">Submit</button>
+                  </div>
+
+                  <p id="greeeting_submit_success" style="display: none;margin-top: 15px;text-align: center"><span data-translate="" data-text="Thanks for submitting!">Thanks for submitting!</span><br><span data-translate="" data-text="Your Greeting will be reviewed and may be published soon.">Your Greeting will be reviewed and may be published soon.</span></p>
+
+                </form>
+            </div>
+
+            <div class="tab_content" id="tab_greetings_my" style="display: none">
+
+              <div id="custom_greetings">
+                <div class="customize">
+                 <ul>
+                   
+                 </ul>
+               </div>
+
+                <section class="todoapp">
+                  <header class="header">
+                    <form id="custom_greetings_form" autocomplete="off" data-form-analytic="" data-category="Greetings" data-action="Submit Custom Greeting">
+                      <input class="new-todo" name="website" placeholder="Enter Personal Greeting here" data-translate="" data-translate-key="enter_greeting_tip" data-translate-attr="placeholder" style="border-bottom: 2px solid #fff;" data-text="enter_greeting_tip">
+                    </form>
+                  </header>
+
+                  <section class="main" style="height: auto; display: none;">
+                    <ul class="todo-list" style="height: auto">
+                </ul>
+                  </section>
+                </section>
+
+                <script class="todo-template" type="text/x-handlebars-template">
+                  {{#this}}
+                  <li {{#if completed}}class="completed"{{/if}} data-id="{{id}}" data-index-basic="{{index_basic}}">
+                    <div class="view">
+                      <label>{{title}}</label>
+                      <button class="destroy"></button>
+                    </div>
+                    <input class="edit" value="{{title}}">
+                  </li>
+                  {{/this}}
+                </script>
+
+              </div>
+            </div>
+
+            <div class="tab_content" id="tab_greetings_favourites" style="display: none">
+              <div id="greetings_favourites">
+
+                <div id="favorite_greetings_empty_message">Click on the heart next to the Greetings to automatically save them here</div>
+
+                  <section class="todoapp">
+                    <section class="main" style="height: calc(100% - 100px); display: none;">
+                      <ul class="todo-list" style="height: calc(100% - 100px)">
+                  </ul>
+                    </section>
+                  </section>
+
+                  <script class="todo-template" type="text/x-handlebars-template">
+                    {{#this}}
+                    <li>
+                      <div class="view">
+                        <label>{{title}}</label>
+                      </div>
+                    </li>
+                    {{/this}}
+                  </script>
+
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content" id="content6">
+
+          <div class="title-name">
+            <span class="title" data-translate="" data-text="Help">Help</span>
+          </div>
+
+            <div class="customize" id="about_content"><strong>Widgets</strong><p>Here you can select the available widgets, click on them to activate or deactivate them. Active widgets will turn green, inactive ones will be white.</p><strong>Account and Personalization</strong><p>Personalize your Ultidash in this section: choose your favorite font, select your preferences and manage your account.</p><strong>Background</strong><p>In this section you can upload your favorite pictures and use them as background for your new tab. Upload as many as you want and decide how often you want them to rotate!</p><strong>Greetings</strong><p>The Greetings are those motivational, funny or just random messages shown below the time. They are all generated by Ultidash’ users to keep you motivated and make you smile! In this section you can contribute with your creativity and anonymously submit Greetings to the Ultidash community. You can also write your own private list of Greetings to remind yourself of what matters to you. Tip: activate the “Safe for Work Filter” to block unsafe greetings.</p><strong>Q&amp;A</strong><p></p><strong>How often do pictures and Greetings change?</strong><p>The background picture changes twice a day at 6 am (day picture) and at 6 pm (night picture), while the Greetings change every hour Tip: you can skip greetings in by clicking on the round arrow that appears when you hover over them.</p><strong>Can I resize the Todo widget?</strong><p>Sure, just move the cursor to its top-left corner and a resizing arrow will appear.</p><strong>How does the Matrix Todo work?</strong><p>“What is important is seldom urgent and what is urgent is seldom important” - Dwight Eisenhower<br>The Matrix Todo is based on the Eisenhower Box, a useful framework to separate and prioritize your tasks. Always try to do first what’s in box 1, and then 2, 3 and 4, in this order. The goal is to filter out the noise and focus on what really matters.</p><strong>How should I use the Concentration Timer?</strong><p>“A goal is a dream with a deadline” - Napoleon Hill<br>The Concentration Timer is a powerful tool to allocate a fixed time period to each planned activity. This ensures that you finish your task within the allocated time or that you don't spend too long on a task that isn't worth the effort. Tip: if you click on “Show Stats” button, you will be able to see how long you have used the Concentration Timer for the current day and overall. You can also set daily concentration goals and monitor your performance over time.</p><strong>What is the Site Blocker?</strong><p>The Site Blocker allows you to temporarily block time-wasting websites. If you activate the Site Blocker, you will be redirected to the new tab page whenever you try to reach a blacklisted website. If you select “Activate with Concentration Timer”, the Site Blocker will be activated automatically whenever the timer is running.</p><strong>What is the Site Tracker?</strong><p>The Site Tracker gives you useful insights on how you spend your time on the web in a simple pie-chart visualization. It’s useful to look at it at the end of the day to see whether your time online is used productively.</p><strong>I submitted a Greeting but I don’t see it in the dashboard, why?</strong><p>All submitted Greetings are reviewed and are added to the public list at the discretion of the Ultidash team.</p><strong>What about privacy?</strong><p>The only data we collect is what is asked during registration (i.e. name and email). All the rest is stored locally on your Chrome local storage, and we have no access to it. Read more about it here: <a href="http://goo.gl/qUkxio" target="_blank">http://goo.gl/qUkxio</a></p><strong>How do I remove the extension from Chrome?</strong><p>On your browser, click menu. Select More tools &gt; Extensions. Next to the extension Ultidash, click Remove from Chrome. A notice to remove the extension will appear. Click Remove. Alternatively, if you see the Ultidash icon in your Chrome toolbar, you can right-click on the icon and select Remove from Chrome.</p></div>
+
+            <p style="margin-bottom: 10px;text-align: center">
+              <span data-translate="" data-translate-key="feedback" data-text="feedback">Problems? Questions? Feature request? Feel lonely? Drop a line at:</span>
+              <strong>hello@ultidash.com</strong>
+            </p>
+
+          </div>
+
+          <div class="content" id="content7">
+
+          <div class="title-name">
+            <span class="title" data-translate="" data-text="About">About</span>
+          </div>
+
+            <div style="text-align: center" id="about_header">
+              <img src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/images/logos/tile.png" height="48">
+            </div>
+
+            <p style="text-align: center" data-translate="" data-translate-key="created_by" data-text="created_by">Created with ❤  by a beardless Italian at a coffee shop in Berlin.</p>
+
+            <p style="position: absolute;bottom: 70px;text-align: center;width: 89%" id="social-buttons">
+              <iframe src="./New Tab_files/like.html" width="50" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./New Tab_files/follow_button.2e798283373a8137c24e277b9b9620d6.en.html" style="position: static; visibility: visible; width: 63px; height: 20px;" data-screen-name="ultidash"></iframe><script async="" src="./New Tab_files/widgets.js.download" charset="utf-8"></script>
+            </p>
+
+            <p style="position: absolute;bottom: 20px;text-align: center;width: 89%" "="">
+              <span data-translate="" data-translate-key="feedback" data-text="feedback">Problems? Questions? Feature request? Feel lonely? Drop a line at:</span>
+              <strong>hello@ultidash.com</strong>
+            </p>
+
+          </div>
+
+          <div class="content customize" id="content8">
+
+            <div class="title-name">
+              <span class="title" data-translate="">What's New</span>
+            </div>
+
+            <div class="customize" id="new_features_container"><h1>15 August 2017</h1><p>Welcome to Ultidash 2.0! In this update we redesigned the menu and other elements of the dashboard. Of course, we also added new features:<br><br>• In the new “Background” section of the menu, you can now upload as many custom backgrounds as you want, and decide how often to rotate them.<br>• You can now also select/deselect multiple Google calendars in the calendar settings.<br>• A “Safe for Work Filter” can be used to block unsafe Greetings. You can find it in the “Greetings” section of the menu.<br><br>Thanks to your amazing feedback, we were able to spot and wipe out a few bugs! Anything you would like to see in the next update? Shoot an email to hello@ultidash.com, we are all ears :)</p><h1>4 July 2017</h1><p>Dear everyone, with this update you can:<br><br>• Upload your own background of any size.<br>• Login with Facebook or Google.<br><br>We also equipped our programming team with better coffee to turn into software, which resulted in a few more bugs being brutally executed. As always, thanks for your feedback and support!</p><h1>29 May 2017</h1><p>Hey everyone, in this new version we added:.<br><br>• A refresh button under the Greetings that allows you to get fresh new ones whenever you want!<br><br>Also, we fixed another couple of annoying bugs that you helped us spot. Our war against them is not over. They’ll soon be back, and in greater numbers. But the harder the battle, the sweeter the victory :) Thanks so much for helping us make Ultidash better with your great feedback!</p><h1>17 April 2017</h1><p>Hey there, we  added this section to keep you all updated with what we’re working on - everything we do here comes from your amazing ideas and feedback. You tell us what to do, and we do (our best to do) it. This new version includes:<br><br>• New fonts: you can now select your favorite font from the “General” section. You are welcome.<br>• We gave a fresh new design to a few elements of the extension. No need to get too specific, we’ll let you discover them.<br>• Translation to Italian - more languages coming soon!<br>• Bug fixes: bugs are the little things that usually lead us to confidence crisis, to question our careers (and eventually life), until we figure out there was a typo in the code.<br><br>Thank you all for the awesome feedback!</p></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/jquery/js/jquery.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/moment/js/moment.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/moment/js/twix.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/jquery.dotdotdot.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/balancetext.js"></script>
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/jquery/js/jquery-ui.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/js/handlebars.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/js/app.js"></script>
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/lang/dictionary/en.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/lang/dictionary/ita.js"></script>
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/features.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/greetings/js/favourites.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/functions.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/init.js"></script>
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/jquery/js/jquery.validate.js"></script>
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/filer.min.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/master.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/todo/js/todoist.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/site_blocker/js/app.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/greetings/js/app.js"></script>
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/gmail/js/main.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/timer/js/main.js"></script>
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/jquery/js/jquery.jeditable.js"></script>
+<link href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/jquery/css/jquery-ui.css" rel="stylesheet">
+
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/weather/js/jquery.simpleWeather.js"></script>
+<script async="" src="./New Tab_files/js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/weather/js/geocomplete.js"></script>
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/weather/js/init.js"></script>
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/hide_show_password/js/src.js"></script>
+
+<link href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/hopscotch/css/hopscotch.css" rel="stylesheet">
+<link href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/flags/css/flag-icon.css" rel="stylesheet">
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/calendar/js/main.js"></script>
+
+<link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/toggle_switch/css/src.css">
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/toggle_switch/js/src.js"></script>
+<script src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/hopscotch/js/hopscotch.js"></script>
+
+<link rel="stylesheet" href="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/weather_icons/css/icons.css">
+
+<script defer="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/bookmarks.js"></script>
+
+<script async="" src="./New Tab_files/client.js.download" gapi_processed="true"></script>
+<!-- Load the GOOGLE CHART AJAX API -->
+<script defer="" src="./New Tab_files/loader.js(1).download"></script>
+<script defer="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/chart/js/daily_goal.js"></script>
+<script defer="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/chart/js/site_tracker.js"></script>
+
+<script async="" src="chrome-extension://dghaelfeofkkdebndhkfoneojddiebhd/assets/app/js/analytics.js"></script>
+
+
+</div></div><iframe name="oauth2relay466227679" id="oauth2relay466227679" src="./New Tab_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./New Tab_files/saved_resource.html"></iframe></body></html>
